@@ -6,8 +6,6 @@ const mongoose = require("mongoose");
 const userRoute = require("./routes/users");
 const bookRoute = require('./routes/books')
 const corsOption = require('./middleware/cors')
-// const loggerone = require('./middleware/loggerone');
-// const loggertwo = require('./middleware/loggertwo');
 
 dotenv.config();
 
@@ -25,8 +23,6 @@ let corsOptions = {
 }
 
 app.use(cors(corsOptions))
-// app.use(loggerone);
-// app.use(loggertwo);
 app.use(corsOption)
 app.use(bodyParser.json());
 app.use(bookRoute);
