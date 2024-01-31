@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const bookSchema = new mongoose.Schema({
   title: {
@@ -17,4 +17,4 @@ const bookSchema = new mongoose.Schema({
     minlength: 2,
   },
 });
-module.exports = mongoose.model('book', bookSchema); 
+module.exports = mongoose.model("book", bookSchema);
